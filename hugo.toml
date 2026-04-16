@@ -1,0 +1,84 @@
+baseURL = "https://meublog.pages.dev/"
+languageCode = "pt-br"
+defaultContentLanguage = "pt"
+title = "MeuBlog"
+theme = "anubis2"
+
+[pagination]
+pagerSize = 5
+
+[params.author]
+name = "Arthur Benites"
+email = "contatoarthurbenites@gmail.com"
+location = "Brazil"
+startYear = 2026
+
+[params]
+description = "MeuBlog - Um blog pessoal"
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+
+locale = "pt-BR"
+
+[params.anubis2]
+hideFooterAttribution = false
+enableMathGlobally = true
+enableCopyCodeButton = true
+enableSummary = true
+enableReadMoreButton = false
+enableRssIcon = true
+enableColorThemeSwitcher = true
+colorTheme = "auto"
+openInNewTab = true
+tocWordCount = 1
+readNextPosts = 10
+socialIcons = [{ id = "github", url = "https://github.com/eubenites" }]
+
+### VERIFICAR
+[[languages.pt.menu.main]]
+identifier = "home"
+name = "início"
+url = "/"
+weight = 1
+
+
+[[languages.pt.menu.main]]
+identifier = "archive"
+name = "arquivo"
+url = "/posts/"
+weight = 2
+
+[[languages.pt.menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 3
+
+[[languages.pt.menu.main]]
+identifier = "about"
+name = "sobre"
+url = "/sobre/"
+weight = 4
+
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "authors"
+
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 4
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+noClasses = true
+style = 'catppuccin-frappe'
+tabWidth = 4
