@@ -82,3 +82,7 @@ codeFences = true
 noClasses = true
 style = 'catppuccin-frappe'
 tabWidth = 4
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
